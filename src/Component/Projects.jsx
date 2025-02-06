@@ -24,7 +24,7 @@ const project = [
 
 const Projects = () => {
   return (
-    <div className='flex flex-col items-center w-[60vw] justify-center gap-5'>
+    <div className='flex flex-col items-center w-[60vw] justify-center gap-5' id='project'>
       <p className='text-4xl font-semibold'>Projects</p>
       <p className='text-slate-200'>Showcasing my innovative projects, built with expertise in MERN, backend development, 
         and cutting-edge technologies.</p>

@@ -2,6 +2,7 @@ import Intro from "./Component/Intro"
 import Navbar from "./Component/Navbar"
 import About from "./Component/About";
 import Projects from "./Component/Projects";
+import Contact from "./Component/Contact"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Intro />
         <About/>
         <Projects/>
+        <Contact/>
       </div>
     </div>
   )

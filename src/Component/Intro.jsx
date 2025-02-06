@@ -3,7 +3,7 @@ import image from "../Images/image.png";
 
 const Intro = () => {
   return (
-    <section className="flex flex-col md:flex-row justify-around items-center p-4">
+    <section className="flex flex-col md:flex-row justify-around items-center p-4" id='intro'>
       {/* Left Subpart */}
       <div className="flex flex-col gap-6 font-stretch-extra-expanded text-center md:text-left">
         <p className="font-semibold">Hi Everyone,</p>

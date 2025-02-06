@@ -1,30 +1,56 @@
-import React from 'react'
-import { Link } from "react-scroll"
-import { MdMessage } from "react-icons/md";
+import React, { useState } from 'react';
+import { Link } from "react-scroll";
+import { MdMessage, MdMenu, MdClose } from "react-icons/md";
+
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <div className='w-[90vw]'>
-            <nav className=' flex justify-around m-5 items-center sticky font-semibold'>
-                <div>
+        <div className='w-full sticky top-0 left-0 z-50'>
+            <nav className='flex justify-between items-center p-5 max-w-6xl mx-auto'>
+                <div className='text-xl font-bold'>
                     Portfolio
                 </div>
-
-                <div className='flex w-[15em] justify-between cursor-pointer'>
-                    <Link className='hover:text-orange-500'>Home</Link>
-                    <Link className=' hover:text-orange-500'>About</Link>
-                    <Link className=' hover:text-orange-500'>Project</Link>
+                
+                {/* Desktop Menu */}
+                <div className='hidden md:flex space-x-6 font-semibold'>
+                    <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='intro' spy={true} smooth={true} offset={-50} duration={500}>Home</Link>
+                    <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500}>About</Link>
+                    <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='project' spy={true} smooth={true} offset={-50} duration={500}>Project</Link>
                 </div>
 
-
-                    <button className='flex items-center cursor-pointer bg-white text-black p-2 hover:bg-slate-200
-                    font-semibold rounded-3xl gap-2'>
+                <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500}>
+                    <button className='hidden md:flex items-center cursor-pointer bg-black text-white px-4 py-2 hover:bg-gray-800 font-semibold rounded-3xl gap-2'>
                         <MdMessage />
-                       Contact Me
+                        Contact Me
                     </button>
-               
+                </Link>
+                
+                {/* Mobile Menu Toggle */}
+                <button className='md:hidden text-2xl' onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? <MdClose /> : <MdMenu />}
+                </button>
             </nav>
+            
+            {/* Mobile Menu */}
+            <div className={`md:hidden fixed top-0 right-0 h-[80vh] w-[70vw] bg-gray-900 shadow-md flex flex-col items-end p-5 space-y-4 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <button className='text-2xl self-end' onClick={() => setIsOpen(false)}>
+                    <MdClose />
+                </button>
+                <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='intro' spy={true} smooth={true} offset={-50} duration={500} onClick={() => setIsOpen(false)}>Home</Link>
+                <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500} onClick={() => setIsOpen(false)}>About</Link>
+                <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='project' spy={true} smooth={true} offset={-50} duration={500} onClick={() => setIsOpen(false)}>Project</Link>
+                <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} onClick={() => setIsOpen(false)}>
+                    <button className='flex items-center cursor-pointer bg-black text-white px-4 py-2 hover:bg-gray-800 font-semibold rounded-3xl gap-2'>
+                        <MdMessage />
+                        Contact Me
+                    </button>
+                </Link>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
+
+
