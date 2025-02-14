@@ -41,6 +41,7 @@ const Navbar = () => {
                 <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='intro' spy={true} smooth={true} offset={-50} duration={500} onClick={() => setIsOpen(false)}>Home</Link>
                 <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500} onClick={() => setIsOpen(false)}>About</Link>
                 <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='project' spy={true} smooth={true} offset={-50} duration={500} onClick={() => setIsOpen(false)}>Project</Link>
+                <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='skill' spy={true} smooth={true} offset={-50} duration={500} onClick={() => setIsOpen(false)}>Skills</Link>
                 <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} onClick={() => setIsOpen(false)}>
                     <button className='flex items-center cursor-pointer bg-black text-white px-4 py-2 hover:bg-gray-800 font-semibold rounded-3xl gap-2'>
                         <MdMessage />
