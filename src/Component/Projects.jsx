@@ -24,14 +24,14 @@ const project = [
 
 const Projects = () => {
   return (
-    <div className='flex flex-col items-center w-[60vw] justify-center gap-5' id='project'>
+    <div className='flex flex-col items-center w-[90vw] justify-center gap-5' id='project'>
       <p className='text-4xl font-semibold'>Projects</p>
       <p className='text-slate-200'>Showcasing my innovative projects, built with expertise in MERN, backend development, 
         and cutting-edge technologies.</p>
        
             {
               project.map((p,index) => (
-                <div key={index} className='border-b border-t w-[55vw] p-5 flex flex-col gap-2 rounded-3xl border-blue-500'>
+                <div key={index} className='border-b border-t w-[80vw] p-5 flex flex-col gap-2 rounded-3xl border-blue-500'>
                     <p className='text-3xl text-blue-500 font-bold'>{p.name}</p>
                     <p className='text-slate-400'>{p.description}</p>
                     <a href={p.code} className='border border-slate-500 p-2 rounded-3xl w-fit bg-black font-semibold'>

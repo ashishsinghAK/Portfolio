@@ -17,6 +17,7 @@ const Navbar = () => {
                     <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='intro' spy={true} smooth={true} offset={-50} duration={500}>Home</Link>
                     <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500}>About</Link>
                     <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='project' spy={true} smooth={true} offset={-50} duration={500}>Project</Link>
+                    <Link className='hover:text-orange-500 cursor-pointer' activeClass='active' to='skill' spy={true} smooth={true} offset={-50} duration={500}>Skills</Link>
                 </div>
 
                 <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500}>
