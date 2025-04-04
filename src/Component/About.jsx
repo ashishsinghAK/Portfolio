@@ -3,8 +3,8 @@ import React from 'react';
 const About = () => {
     return (
         <div className="px-4 sm:px-6 lg:px-8 w-[90vw]" id='about'>
-            <div className="flex flex-col items-center gap-5">
-                <h1 className="text-4xl font-semibold text-center sm:text-5xl lg:text-4xl">About</h1>
+            <div className="flex flex-col items-center gap-5 border p-4 rounded-4xl">
+                <h1 className="text-4xl font-semibold text-center sm:text-5xl lg:text-4xl text-blue-600">About</h1>
                 <p className="text-slate-500 text-center sm:text-left">
                     Hi, I'm Ashish Kumar Singh, a passionate MERN Stack Developer with a deep love for backend development
                     and a strong command of Data Structures and Algorithms (DSA). I have a solid grasp of core computer science

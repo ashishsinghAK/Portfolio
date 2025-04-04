@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { BsLinkedin } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
 import emailjs from "@emailjs/browser";
 
@@ -25,7 +26,7 @@ const Contact = () => {
 
   return (
     <div className='flex flex-col items-center p-5 gap-7 w-full' id='contact'>
-      <p className='text-4xl font-semibold text-center'>Contact Me</p>
+      <p className='text-4xl font-semibold text-center text-blue-600'>Contact Me</p>
       <p className='text-2xl font-mono text-center'>Have a Question? Let's Talk!</p>
 
       <form 
@@ -70,6 +71,9 @@ const Contact = () => {
         </a>
         <a href="https://www.instagram.com/ashishksingh20/#" className='text-4xl text-orange-700'>
           <SiInstagram />
+        </a>
+        <a href="https://github.com/ashishsinghAK" className='text-4xl'>
+          <FaGithub />
         </a>
       </div>
 
