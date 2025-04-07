@@ -43,12 +43,12 @@ const project = [
 
 const Projects = () => {
   return (
-    <div className='flex flex-col items-center w-full px-4 py-8 bg-gray-950 text-white' id='project'>
+    <div className='flex flex-col items-center w-full px-4 py-8 bg-gradient-to-r from-black to-gray-900 text-white' id='project'>
       <h2 className='text-4xl font-semibold text-blue-500 mb-6'>Projects</h2>
       <p className='text-lg text-slate-300 mb-8 text-center'>Showcasing my innovative projects, built with expertise in MERN, backend development, and cutting-edge technologies.</p>
       <div className='grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3'>
         {project.map((p) => (
-          <div key={p.id} className='bg-gray-900 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105'>
+          <div key={p.id} className='bg-gradient-to-r from-black to-gray-900 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105'>
             <h3 className='text-2xl text-yellow-400 font-bold'>{p.name}</h3>
             <p className='text-slate-400 mt-2'>{p.description}</p>
             <ul className='mt-4 list-disc pl-5 space-y-2'>

@@ -8,16 +8,18 @@ import mongodb from "../Images/mongodb.png";
 import node from "../Images/node.png";
 import js from "../Images/js.png";
 import mysql from "../Images/mysql.png"
+import express from "../Images/express-js.png"
 
 const skill = [
-  { name: "Html", image: html },
-  { name: "Tailwind Css", image: css },
-  { name: "React Js", image: react },
+  { name: "HTML", image: html },
+  { name: "Tailwind CSS", image: css },
+  { name: "React JS", image: react },
   { name: "Java", image: java },
   { name: "JavaScript", image: js },
-  { name: "Node Js", image: node },
-  { name: "MongoDb", image: mongodb },
-  {name:"MySql",image:mysql}
+  { name: "Node JS", image: node },
+  { name: "MongoDB", image: mongodb },
+  {name:"MySQL",image:mysql},
+  {name:"Express JS",image:express}
 ];
 
 const Skills = () => {

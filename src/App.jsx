@@ -7,8 +7,9 @@ import Skills from "./Component/Skills";
 
 function App() {
   return (
-    <div className="flex justify-center m-auto overflow-x-hidden overflow-y-hidden">
-      <div className="w-[90vw] flex flex-col gap-[4em] items-center">
+    <div className="flex justify-center m-auto overflow-x-hidden overflow-y-hidden
+    bg-gradient-to-l from-black to-gray-900">
+      <div className="w-[90vw] flex flex-col gap-[4em] items-center ">
         <Navbar />
         <Intro />
         <About/>
