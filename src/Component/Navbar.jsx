@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import { MdMessage, MdMenu, MdClose } from "react-icons/md";
+import { SiBackblaze } from "react-icons/si";
+import { SiAuchan } from "react-icons/si";
+import { SiKaios } from "react-icons/si";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,8 +11,11 @@ const Navbar = () => {
     return (
         <div className='w-full sticky top-0 left-0 z-50'>
             <nav className='flex justify-between items-center p-5 max-w-6xl mx-auto'>
-                <div className='text-xl font-bold'>
-                    Portfolio
+                <div className='text-xl font-bold flex items-center gap-1 font-mono'>
+                    {/* <PiCodesandboxLogoFill/>Ashish | M+E+R+N<PiCodesandboxLogoFill/> */}
+                    <SiAuchan/><SiKaios/>
+                    <div className='text-orange-600'><SiBackblaze/></div>
+                    
                 </div>
                 
                 {/* Desktop Menu */}

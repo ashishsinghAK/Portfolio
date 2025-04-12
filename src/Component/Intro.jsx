@@ -16,7 +16,7 @@ const Intro = () => {
             a Passionate Web Developer
           </h1>
           <p className="text-lg md:text-xl mt-2">
-            Specialized in <span className="text-orange-500">MERN Stack Development</span>,<br />
+            Specialized in <span className="text-red-500">MERN Stack Development</span>,<br />
             I craft seamless user experiences and build powerful backend solutions to bring ideas to life.
           </p>
         </div>
@@ -26,7 +26,7 @@ const Intro = () => {
           <img
             src={image}
             alt="Ashish Kr. Singh"
-            className="w-96 h-96 rounded-full object-cover"
+            className="w-[15em] h-[15em] rounded-full object-cover"
           />
         </div>
       </section>
