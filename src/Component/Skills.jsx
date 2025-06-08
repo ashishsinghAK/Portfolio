@@ -24,7 +24,7 @@ const skill = [
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center text-white gap-10 px-4" id="skill">
+    <div className="flex flex-col items-center text-white gap-10 px-4 backdrop-blur-sm" id="skill">
       <p className="text-3xl font-semibold text-blue-600">Skills</p>
       <div className="w-full overflow-hidden mt-6">
         <Marquee velocity={20} resetAfterTries={200} scatterRandomly={false}>

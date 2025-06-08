@@ -10,3 +10,7 @@ body{
     overflow-x: hidden;
     color:white;
 }
+
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';

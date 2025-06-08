@@ -11,7 +11,7 @@ const Intro = () => {
         {/* Left Subpart */}
         <div className="flex flex-col gap-4 text-center md:text-left">
           <p className="text-2xl font-semibold">Hi Everyone,</p>
-          <h1 className="text-4xl lg:text-6xl font-bold">
+          <h1 className="text-4xl lg:text-5xl font-bold">
             I&apos;m <span className="text-gray-300">Ashish Kr. Singh</span>,<br />
             a Passionate Web Developer
           </h1>
