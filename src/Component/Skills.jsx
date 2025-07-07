@@ -1,4 +1,4 @@
-import React from "react";
+
 import Marquee from "react-marquee-slider";
 import html from "../Images/html.png";
 import css from "../Images/tailwind.png";
@@ -9,17 +9,19 @@ import node from "../Images/node.png";
 import js from "../Images/js.png";
 import mysql from "../Images/mysql.png"
 import express from "../Images/express-js.png"
+import Ts from "../Images/Ts.png"
 
 const skill = [
   { name: "HTML", image: html },
   { name: "Tailwind CSS", image: css },
   { name: "React JS", image: react },
-  { name: "Java", image: java },
-  { name: "JavaScript", image: js },
   { name: "Node JS", image: node },
   { name: "MongoDB", image: mongodb },
   {name:"MySQL",image:mysql},
-  {name:"Express JS",image:express}
+  {name:"Express JS",image:express},
+  { name: "JavaScript", image: js },
+  {name:"TypeScript",image:Ts},
+  { name: "Java", image: java }
 ];
 
 const Skills = () => {
@@ -27,7 +29,7 @@ const Skills = () => {
     <div className="flex flex-col items-center text-white gap-10 px-4 backdrop-blur-sm" id="skill">
       <p className="text-3xl font-semibold text-blue-600">Skills</p>
       <div className="w-full overflow-hidden mt-6">
-        <Marquee velocity={20} resetAfterTries={200} scatterRandomly={false}>
+        <Marquee velocity={20} resetAfterTries={200} scatterRandomly={false} direction="right">
           {skill.map((item, index) => (
             <div key={index} className="mx-6 md:mx-12">
               <img 
